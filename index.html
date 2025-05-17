@@ -49,6 +49,8 @@
 <link href="assets/css/responsive.css" rel="stylesheet">
 
 <style>
+
+    
     /* Custom Styles to Ensure Same Height for .inner-box in Chooseus Section */
     .chooseus-style-three {
         background: #f5f7f6; /* Match the background color from the image */
@@ -219,35 +221,76 @@
     <div class="boxed_wrapper ltr">
 
         <!-- preloader -->
-        <div class="loader-wrap">
-            <div class="preloader">
-                <div class="preloader-close"><i class="icon-27"></i></div>
-                <div id="handle-preloader" class="handle-preloader">
-                    <div class="animation-preloader">
-                        <div class="spinner"></div>
-                        <div class="txt-loading">
-                            <span data-text-preloader="T" class="letters-loading">T</span>
-                            <span data-text-preloader="r" class="letters-loading">r</span>
-                            <span data-text-preloader="u" class="letters-loading">u</span>
-                            <span data-text-preloader="m" class="letters-loading">m</span>
-                            <span data-text-preloader="p" class="letters-loading">p</span>
-                            <span data-text-preloader="T" class="letters-loading">T</span>
-                            <span data-text-preloader="e" class="letters-loading">e</span>
-                            <span data-text-preloader="c" class="letters-loading">c</span>
-                            <span data-text-preloader="h" class="letters-loading">h</span>
-                            <span data-text-preloader="n" class="letters-loading">n</span>
-                            <span data-text-preloader="o" class="letters-loading">o</span>
-                            <span data-text-preloader="l" class="letters-loading">l</span>
-                            <span data-text-preloader="o" class="letters-loading">o</span>
-                            <span data-text-preloader="g" class="letters-loading">g</span>
-                            <span data-text-preloader="i" class="letters-loading">i</span>
-                            <span data-text-preloader="e" class="letters-loading">e</span>
-                            <span data-text-preloader="s" class="letters-loading">s</span>
-                        </div>
-                    </div>  
+       <div class="loader-wrap">
+    <div class="preloader">
+        <div class="preloader-close"><i class="icon-27"></i></div>
+        <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <div class="text-line trump-line">
+                        <span data-text-preloader="T" class="letters-loading">T</span>
+                        <span data-text-preloader="R" class="letters-loading">R</span>
+                        <span data-text-preloader="U" class="letters-loading">U</span>
+                        <span data-text-preloader="M" class="letters-loading">M</span>
+                        <span data-text-preloader="P" class="letters-loading">P</span>
+                    </div>
+                    <div class="text-line technologies-line">
+                        <span data-text-preloader="T" class="letters-loading">T</span>
+                        <span data-text-preloader="E" class="letters-loading">E</span>
+                        <span data-text-preloader="C" class="letters-loading">C</span>
+                        <span data-text-preloader="H" class="letters-loading">H</span>
+                        <span data-text-preloader="N" class="letters-loading">N</span>
+                        <span data-text-preloader="O" class="letters-loading">O</span>
+                        <span data-text-preloader="L" class="letters-loading">L</span>
+                        <span data-text-preloader="O" class="letters-loading">O</span>
+                        <span data-text-preloader="G" class="letters-loading">G</span>
+                        <span data-text-preloader="I" class="letters-loading">I</span>
+                        <span data-text-preloader="E" class="letters-loading">E</span>
+                        <span data-text-preloader="S" class="letters-loading">S</span>
+                    </div>
                 </div>
-            </div>
+            </div>  
         </div>
+    </div>
+</div>
+
+<style>
+    .txt-loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-line {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        .txt-loading {
+            flex-direction: column;
+        }
+        .text-line {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    /* Desktop view - can adjust as needed */
+    @media (min-width: 769px) {
+        .txt-loading {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .trump-line::after {
+            content: " ";
+            margin-right: 10px; /* Space between TRUMP and TECHNOLOGIES */
+        }
+    }
+</style>
         <!-- preloader end -->
 
         <!-- main header -->
@@ -380,7 +423,7 @@
                     <div class="col-lg-6 col-md-12 col-sm-12 video-column">
                         <div class="video_block_two">
                             <div class="video-box p_relative pb_100 pr_150 mr_30">
-                                <figure class="image image-1"><img src="assets/images/resource/about-1.jpg" alt=""></figure>
+                                <figure class="image image-1"><img src="assets/images/resource/about-4.jpg" alt=""></figure>
                                 <figure class="image image-2 z_1 p_absolute r_0 b_0"><img src="assets/images/resource/about-222.png" alt=""></figure>
                             </div>
                         </div>
