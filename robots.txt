@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /job-details?jobId=
-Disallow: /job-details$
-Sitemap: https://g1careers.com/sitemap.xml
