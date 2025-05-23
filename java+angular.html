@@ -1,904 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
+    <title>Java+Angular | Trump Technologies</title>
+    <!-- /SEO Ultimate -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Java Full Stack Training">
-    <meta name="google-site-verification" content="PQ6WWrs0sO1qJwTu7W1xL25cddVGq9JvOxWxAfxMD0M">
+     <link rel="icon" type="image/png" sizes="192x192"  href="assets/trump/tp.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/trump/tp.jpg">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/trump/tp.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/trump/tp.jpg">
 
-    <title>Java+Angular Hiring Program</title>
-    <link rel="canonical" href="https://trumptechnologies.in/java+angular">
-
-    <!-- Fav Icon -->
-    <link rel="icon" href="assets/images/logos.jpeg" type="image/x-icon">
-    <link rel="canonical" href="https://trumptechnologies.com/java+angular" />
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-
-    <!-- Stylesheets -->
-    <link href="assets/css/font-awesome-all.css" rel="stylesheet">
-    <link href="assets/css/flaticon.css" rel="stylesheet">
-    <link href="assets/css/owl.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/nice-select.css" rel="stylesheet">
-    <link href="assets/css/odometer.css" rel="stylesheet">
-    <link href="assets/css/elpath.css" rel="stylesheet">
-    <link href="assets/css/color.css" id="jssDefault" rel="stylesheet">
-    <link href="assets/css/rtl.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/module-css/header.css" rel="stylesheet">
-    <link href="assets/css/module-css/page-title.css" rel="stylesheet">
-    <link href="assets/css/module-css/contact.css" rel="stylesheet">
-    <link href="assets/css/module-css/subscribe.css" rel="stylesheet">
-    <link href="assets/css/module-css/footer.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-
-    <!-- Additional Styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Latest compiled and minified CSS -->
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/js/bootstrap.min.js">
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- StyleSheet link CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/special-classes.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        /* Reset default margins and ensure box-sizing */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Enhanced UI Styling */
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #333;
-            line-height: 1.6;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-        }
-
-        /* Container adjustments */
-        .auto-container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 10px;
-        }
-
-        /* Header Enhancements */
-        .header-lower {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        .header-lower .outer-box {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            padding: 8px 0; /* Further reduced padding */
-        }
-
-        .logo-box span {
-            background: linear-gradient(135deg, #28A745, #4CAF50);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-weight: 700;
-            line-height: 1; /* Added to reduce vertical space */
-        }
-
-        /* Menu Area */
-        .menu-area {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        /* Mobile Nav Toggler (Hamburger Icon) */
-        .mobile-nav-toggler {
-            display: none;
-            cursor: pointer;
-        }
-
-        .mobile-nav-toggler .icon-bar {
-            display: block;
-            width: 20px; /* Reduced size to match index-2.html */
-            height: 2px;
-            background-color: #28A745; /* Changed color to match index-2.html */
-            margin: 4px 0;
-            transition: all 0.3s ease;
-        }
-
-        /* Main Menu */
-        .main-menu {
-            display: block;
-        }
-
-        .main-menu .navigation {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .main-menu .navigation li {
-            margin-left: 20px;
-        }
-
-        .main-menu .navigation li a {
-            color: #333;
+        .syllabus-link {
+            display: inline-block;
+            color: #007bff;
             text-decoration: none;
-            font-weight: 500;
-        }
-
-        /* Menu Right Content */
-        .menu-right-content {
-            display: flex;
-            align-items: center;
-        }
-
-        .menu-right-content .link-box {
-            margin-right: 20px;
-        }
-
-        .menu-right-content .link-box a {
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .menu-right-content .btn-box a {
+            font-weight: bold;
+            font-size: 18px;
             padding: 10px 20px;
-            background: linear-gradient(135deg, #28A745, #4CAF50);
-            color: white;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
+            margin-top: 15px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
         }
-
-        /* Main Content Styling */
-        .info-box {
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            padding: 40px;
-            border: 1px solid #f0f0f0;
-            margin-top: 30px;
+        .syllabus-link:hover {
+            background-color: #007bff;
+            color: #fff;
         }
-
-        .info-box h3 {
-            color: #28A745;
-            font-size: 36px;
-            margin-bottom: 20px;
-            font-weight: 700;
-            position: relative;
-            padding-bottom: 15px;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .info-box h3:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, #28A745, #4CAF50);
-            border-radius: 4px;
-        }
-
-        .info-box p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-
-        /* Enhanced Box Items */
-        .single-item {
-            background-color: #fff;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
-            border: 1px solid #f0f0f0;
-            height: 100%;
-        }
-
-        .single-item:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-            border-color: rgba(40, 167, 69, 0.3);
-        }
-
-        .single-item h4 {
-            color: #111;
-            font-size: 22px;
-            margin-bottom: 15px;
-            font-weight: 600;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        /* Icon Box Styling */
-        .icon-box {
-            background: linear-gradient(135deg, #28A745, #4CAF50);
-            border-radius: 12px;
-            padding: 15px;
-            height: 60px;
-            width: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            color: white;
-            box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
-        }
-
-        .icon-box i {
-            font-size: 24px;
-        }
-
-        /* Highlight Box */
-        .highlight-box {
-            background-color: #e6f4e6;
-            border-left: 5px solid #28A745;
-            padding: 20px 25px;
-            margin: 25px 0;
-            border-radius: 0 12px 12px 0;
-            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.1);
-        }
-
-        .highlight-box p {
-            margin-bottom: 0;
-        }
-
-        /* Requirements List */
-        .requirements-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .requirements-list li {
-            margin-bottom: 16px;
-            padding-left: 35px;
-            position: relative;
-            font-size: 16px;
-        }
-
-        .requirements-list li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #28A745;
-            font-weight: bold;
-            background-color: rgba(40, 167, 69, 0.1);
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-        }
-
-        /* Process List */
-        .process-list {
-            counter-reset: process-counter;
-            padding-left: 0;
-        }
-
-        .process-list li {
-            margin-bottom: 18px;
-            padding: 15px 15px 15px 65px;
-            position: relative;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            font-size: 15px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .process-list li:hover {
-            background-color: #fff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        .process-list li:before {
-            content: counter(process-counter);
-            counter-increment: process-counter;
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(135deg, #28A745, #4CAF50);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            box-shadow: 0 3px 8px rgba(40, 167, 69, 0.3);
-        }
-
-        /* Date Box */
-        .date-box {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            background-color: #f8f9fa;
-            padding: 8px 16px;
-            border-radius: 30px;
-            margin: 10px 0;
-            border: 1px solid #eee;
-            width: 100%;
-        }
-
-        .date-box i {
-            color: #28A745;
-            margin-right: 8px;
-        }
-
-        .date-box:hover {
-            background-color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border-color: rgba(40, 167, 69, 0.2);
-        }
-
-        /* Buttons */
         .apply-button {
             display: inline-block;
-            padding: 16px 30px;
-            background: linear-gradient(135deg, #28A745, #4CAF50);
-            color: white;
-            border-radius: 50px;
+            background-color: #ff6200;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3);
-            margin-top: 15px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
         }
-
         .apply-button:hover {
-            background: linear-gradient(135deg, #4CAF50, #28A745);
-            color: white;
-            text-decoration: none;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(40, 167, 69, 0.4);
+            background-color: #e55a00;
         }
-
-        .syllabus-link {
-            color: #28A745;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 10px 20px;
-            border: 2px solid #28A745;
-            border-radius: 8px;
-            display: inline-block;
-            margin-top: 10px;
+        .apply-button i {
+            margin-left: 10px;
+            font-size: 18px;
         }
-
-        .syllabus-link:hover {
-            background-color: #28A745;
-            color: white;
-            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
-        }
-
-        /* Footer Enhancements */
-        .main-footer {
-            background-color: #2d2d2d;
-        }
-
-        .main-footer p {
-            color: #ccc;
-        }
-
-        .scroll-to-top {
-            background: linear-gradient(135deg, #28A745, #4CAF50);
-        }
-
-        /* Row spacing */
         .row-spaced {
-            margin-top: 30px;
-        }
-
-        /* Equal height columns */
-        .equal-height {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .equal-height > [class*='col-'] {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .equal-height .single-item {
-            flex-grow: 1;
-        }
-
-        /* Mobile Menu Adjustments */
-        .mobile-menu {
-            width: 100%;
-            max-width: 300px;
-        }
-
-        /* Media Queries for Mobile Responsiveness */
-        @media (max-width: 768px) {
-            /* Container */
-            .auto-container {
-                padding: 0 10px;
-            }
-
-            /* Header */
-            .header-lower .outer-box {
-                flex-wrap: wrap;
-                position: relative;
-                padding: 15px 0;
-            }
-
-            /* Logo Box */
-            .logo-box {
-                display: flex;
-                align-items: center;
-                margin-right: 10px; /* Further reduced margin to minimize space */
-            }
-
-            .logo-box img {
-                width: 32px; /* Further reduced logo size to match index-2.html */
-                height: 32px;
-            }
-
-            .logo-box span {
-                font-size: 16px; /* Further reduced font size to match index-2.html */
-            }
-
-            /* Menu Area */
-            .menu-area {
-                width: auto;
-                justify-content: flex-end;
-            }
-
-            /* Mobile Nav Toggler */
-            .mobile-nav-toggler {
-  position: relative;
-  float: right;
-  font-size: 40px;
-  line-height: 50px;
-  cursor: pointer;
-  background: var(--theme-color);
-  display: none;
-}
-
-            /* Main Menu */
-            .main-menu {
-                display: none;
-            }
-
-            /* Menu Right Content */
-            .menu-right-content {
-                display: none;
-            }
-
-            /* Info Box */
-            .info-box {
-                padding: 20px;
-            }
-
-            .info-box h3 {
-                font-size: 28px;
-            }
-
-            .info-box p {
-                font-size: 1rem;
-            }
-
-            /* Date Box */
-            .date-box {
-                display: block;
-                text-align: left;
-                padding: 10px;
-                margin: 8px 0;
-            }
-
-            .date-box i {
-                margin-right: 5px;
-            }
-
-            .date-box strong {
-                display: block;
-                margin-bottom: 5px;
-            }
-
-            /* Highlight Box */
-            .highlight-box {
-                padding: 15px 20px;
-            }
-
-            /* Process List */
-            .process-list li {
-                font-size: 14px;
-                padding: 12px 12px 12px 50px;
-            }
-
-            .process-list li:before {
-                width: 30px;
-                height: 30px;
-                font-size: 14px;
-                left: 10px;
-            }
-
-            /* Buttons */
-            .apply-button, .syllabus-link {
-                font-size: 1rem;
-                padding: 12px 20px;
-            }
-
-            /* Footer */
-            .footer-column {
-                margin-bottom: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            /* Info Box */
-            .info-box h3 {
-                font-size: 24px;
-            }
-
-            .info-box p {
-                font-size: 0.9rem;
-            }
-
-            /* Date Box */
-            .date-box {
-                font-size: 0.85rem;
-                padding: 8px;
-            }
-
-            /* Process List */
-            .process-list li {
-                font-size: 13px;
-            }
-
-            /* Buttons */
-            .apply-button, .syllabus-link {
-                font-size: 0.9rem;
-                padding: 10px 15px;
-            }
-
-            /* Footer */
-            .footer-widget p {
-                font-size: 0.9rem;
-            }
-
-            .mobile-nav-toggler .icon-bar {
-                width: 18px; /* Further reduced for smaller screens */
-                height: 2px;
-                margin: 3px 0;
-            }
-
-            .logo-box span {
-                font-size: 14px; /* Further reduced for smaller screens */
-            }
+            margin-top: 40px;
         }
     </style>
 </head>
 
 <body>
-    <div class="boxed_wrapper ltr">
-        <!-- Preloader -->
-        <div class="loader-wrap">
-    <div class="preloader">
-        <div class="preloader-close"><i class="icon-27"></i></div>
-        <div id="handle-preloader" class="handle-preloader">
-            <div class="animation-preloader">
-                <div class="spinner"></div>
-                <div class="txt-loading">
-                    <div class="text-line trump-line">
-                        <span data-text-preloader="T" class="letters-loading">T</span>
-                        <span data-text-preloader="R" class="letters-loading">R</span>
-                        <span data-text-preloader="U" class="letters-loading">U</span>
-                        <span data-text-preloader="M" class="letters-loading">M</span>
-                        <span data-text-preloader="P" class="letters-loading">P</span>
+<!-- Header -->
+<div class="sub-banner sub-banner4">
+    <figure class="sub-bannerleftlayer mb-0">
+        <img src="./assets/images/sub-bannerleftlayer.png" alt="" class="img-fluid">
+    </figure>
+    <header class="header">
+        <div class="main-header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="./index.html">Trump Technologies</a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./talent-programs.html">Programs</a>
+                            </li>
+                            <li class="nav-space nav-item active">
+                                <a class="nav-link" href="process.html">Java+Angular</a>
+                            </li>
+                            <li class="nav-space nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="last_list">
+                            <figure class="nav-phoneimage mb-0"><img class="img-fluid" src="./assets/images/nav-phoneimage.png" alt=""></figure>
+                            <div class="content">
+                                <p class="text-size-18 text-white">Call Anytime:</p>
+                                <a class="text-decoration-none last_list_atag" href="tel:(+91)8977177745">(+91)8977177745</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-line technologies-line">
-                        <span data-text-preloader="T" class="letters-loading">T</span>
-                        <span data-text-preloader="E" class="letters-loading">E</span>
-                        <span data-text-preloader="C" class="letters-loading">C</span>
-                        <span data-text-preloader="H" class="letters-loading">H</span>
-                        <span data-text-preloader="N" class="letters-loading">N</span>
-                        <span data-text-preloader="O" class="letters-loading">O</span>
-                        <span data-text-preloader="L" class="letters-loading">L</span>
-                        <span data-text-preloader="O" class="letters-loading">O</span>
-                        <span data-text-preloader="G" class="letters-loading">G</span>
-                        <span data-text-preloader="I" class="letters-loading">I</span>
-                        <span data-text-preloader="E" class="letters-loading">E</span>
-                        <span data-text-preloader="S" class="letters-loading">S</span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="banner_content" data-aos="fade-up">
+                        <figure class="service-rightcircle mb-0">
+                            <img src="./assets/images/service-rightcircle.png" alt="" class="img-fluid">
+                        </figure>
+                        <h1 class="text-white">Java+Angular Training</h1>
+                        <p>Join our most trusted Talent Programs and build a rewarding career in tech.</p>
+                        <div class="box">
+                            <span class="mb-0">Home</span>
+                            <figure class="mb-0 arrow"><img src="./assets/images/button-arrow.png" alt="" class="img-fluid"></figure>
+                            <span class="mb-0 box_span">Java+Angular</span>
+                        </div>
                     </div>
                 </div>
-            </div>  
-        </div>
-    </div>
+            </div>
+        </div>    
+    </section>
 </div>
-
-<style>
-    .txt-loading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text-line {
-        display: flex;
-        justify-content: center;
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-        .txt-loading {
-            flex-direction: column;
-        }
-        .text-line {
-            width: 100%;
-            text-align: center;
-        }
-    }
-
-    /* Desktop view - can adjust as needed */
-    @media (min-width: 769px) {
-        .txt-loading {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .trump-line::after {
-            content: " ";
-            margin-right: 10px; /* Space between TRUMP and TECHNOLOGIES */
-        }
-    }
-</style>
-
-        <!-- Main Header -->
-        <header class="main-header header-style-three">
-            <div class="header-top">
-                <div class="auto-container">
-                    <div class="top-inner">
-                        <ul class="info">
-                            <li><img src="assets/images/icons/icon-6.png" alt=""> Call: <a href="tel:9019320315">+91 90193 20315</a></li>
-                            <li><img src="assets/images/icons/icon-7.png" alt=""> Mail: <a href="mailto:Trumptechnologieshyd@gmail.com">Trumptechnologieshyd@gmail.com</a></li>
+<!-- Process Section -->
+<section class="process-section">
+    <figure class="service-rightlayer mb-0">
+        <img src="./assets/images/service-leftlayer.png" alt="" class="img-fluid">
+    </figure>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="servicepage_content" data-aos="fade-right">
+                    <h6>Our Process</h6>
+                    <h2>Your Path to a Tech Career</h2>
+                    <p>As the most trusted training provider, we guide you through a structured process to join our Talent Programs, partnering with leading organizations across India to ensure your career success.</p>
+                    <p>Our comprehensive training program covers all aspects of Java Full Stack development, including Core Java, Advanced Java, Spring Boot, Microservices and more.</p>
+                    <p>Download the detailed syllabus to explore the curriculum:</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1qf4dERtF_nxYVWsMrXmqm3WRBpFGv6pdX4kO6BNK9Pg/export?format=xlsx" class="syllabus-link" target="_blank">Download Syllabus</a>
+                    <div class="row row-spaced" style="justify-content: center;">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon1.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 1: Apply</h4>
+                    <p class="text-size-18">Fill the interest form to start your journey with our Talent Programs.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon2.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 2: Assessments</h4>
+                    <p class="text-size-18">Complete an online assessment followed by an interview to showcase your skills.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon3.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 3: Self-Assessment</h4>
+                    <p class="text-size-18">Fill the candidate self-assessment form to evaluate your strengths.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon4.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 4: Enroll</h4>
+                    <p class="text-size-18">Pay ₹25,000 to join our 3-6 month Talent Program course.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon5.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 5: Interviews</h4>
+                    <p class="text-size-18">Attend interviews with our esteemed clients for placement opportunities.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon6.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 6: Onboarding</h4>
+                    <p class="text-size-18">Join Trump Technologies or our partner companies as an employee.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon7.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 7: Career Growth</h4>
+                    <p class="text-size-18">Commit to a minimum 2-year journey with us, upskilling every Saturday at our office to grow into a senior position.</p>
+                </div>
+            </div>
+        </div>
+         <div class="col-lg-12 text-center">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGVMgeiTFP0jJn9OlwXaEn9iM_E5Qz_8P5ld_FDlmVN0gBDg/viewform" class="apply-button" target="_blank">
+                                Apply Now 
+                            </a>
+                        </div>
+    </div>
+    <figure class="service-leftlayer mb-0">
+        <img src="./assets/images/service-rightlayer.png" alt="" class="img-fluid">
+    </figure>
+</section>
+<!-- Footer -->
+<section class="footer-section">
+    <div class="container">
+        <figure class="footer-leftimage mb-0">
+            <img src="./assets/images/footer-leftimage.png" alt="" class="img-fluid">
+        </figure>
+        <figure class="mb-0 about-leftcircle">
+            <img src="./assets/images/about-rightcircle.png" alt="" class="img-fluid">
+        </figure>
+        <div class="middle-portion">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-6 col-12">
+                    <div class="first-column">
+                        <a class="navbar-brand" href="./index.html">Trump Technologies</a>
+                        <p class="text-size-18 footer-text">Our innovative IT services, corporate training, and placement solutions empower businesses and individuals to achieve excellence in the tech-driven world.</p>
+                        <div class="lower">
+                            <div class="lower-content">
+                                <figure class="icon">
+                                    <img src="./assets/images/footer-callicon.png" alt="" class="img-fluid">
+                                </figure>
+                                <div class="content">
+                                    <span class="text-white">Call us:</span>
+                                    <a class="text-size-18 mb-0 text text-decoration-none" href="tel: (+91)8977177745">(+91)8977177745</a>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                                <figure class="icon">
+                                    <img src="./assets/images/footer-emailicon.png" alt="" class="img-fluid">
+                                </figure>
+                                <div class="content">
+                                    <span class="text-white">Email us:</span>
+                                    <a href="mailto:it@trumptechnologies.in" class="text-size-18 mb-0 text-decoration-none">it@trumptechnologies.in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 col-12 d-md-block d-none">
+                    <div class="links list-pd">
+                        <h4 class="heading text-white">Quick Links</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="./index.html" class="text-size-18 text text-decoration-none">Home</a></li>
+                            <li><a href="./talent-programs.html" class="text-size-18 text text-decoration-none">Talent Programs</a></li>
+                            <li><a href="./contact.html" class="text-size-18 text text-decoration-none">Contact</a></li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="header-lower">
-                <div class="auto-container">
-                    <div class="outer-box">
-                        <figure class="logo-box" style="display: flex; align-items: center;">
-                            <a href="index.html">
-                                <img src="assets/images/logos.jpeg" alt="Trump Technologies Logo" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #333;">
-                            </a>
-                            <span style="margin-left: 8px; font-size: 20px; font-weight: bold; color: #333;">Trump Technologies</span>
-                        </figure>
-                        <div class="menu-area">
-                            <div class="mobile-nav-toggler">
-                                <i class="icon-bar"></i>
-                                <i class="icon-bar"></i>
-                                <i class="icon-bar"></i>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-12 d-lg-block d-none">
+                    <div class="links">
+                        <h4 class="heading text-white">Company</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="./about.html" class="text-size-18 text text-decoration-none">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-sm-block d-none">
+                    <div class="icons">
+                        <h4 class="heading mb-0 text-white">Reach Us</h4>
+                        <h4 class="heading text-white">We’d Love to Hear From You!</h4><br>
+                        <!-- Email Input -->
+                        <form id="reachusform" onsubmit="return sendReachUsEmail()">
+                            <div class="form-group mb-2">
+                                <input type="email" class="form_style" placeholder="Enter Email Address:" name="email" id="reachUsEmail" required> 
                             </div>
-                            <nav class="main-menu navbar-expand-md navbar-light clearfix">
-                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul class="navigation clearfix">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li class="current"><a href="java+angular.html">Java+Angular</a></li>
-
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="menu-right-content">
-                            <div class="link-box mr_20"><a href="https://app.trumptechnologies.com/" target="_blank">Log In</a></div>
-                            <div class="btn-box"><a href="https://app.trumptechnologies.com/" target="_blank" class="theme-btn btn-one">Sign up</a></div>
-                        </div>
+                            <button type="submit" class="subscribe_now text-white text-decoration-none">
+                                Send Now <i class="circle fa-thin fa-arrow-right"></i>
+                            </button>
+                        </form>
                     </div>
-                </div>
-            </div>
-            <div class="sticky-header">
-                <div class="outer-container">
-                    <div class="outer-box">
-                        <figure class="logo-box" style="display: flex; align-items: center;">
-                            <a href="index.html">
-                                <img src="assets/images/logos.jpeg" alt="Trump Technologies Logo" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #333;">
-                            </a>
-                            <span style="margin-left: 8px; font-size: 18px; font-weight: bold; color: #333;">Trump Technologies</span>
-                        </figure>
-                        <div class="menu-area">
-                            <nav class="main-menu clearfix"></nav>
-                        </div>
-                        <div class="menu-right-content">
-                            <div class="link-box mr_20"><a href="https://app.trumptechnologies.com/" target="_blank">Log In</a></div>
-                            <div class="btn-box"><a href="https://app.trumptechnologies.com/" target="_blank" class="theme-btn btn-one">Sign up</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Training Section -->
-        <!-- Training Section -->
-<section class="training-section">
-    <div class="auto-container">
-        <div class="info-box">
-            <h3>Java Full Stack Hiring Program</h3>
-            <p>We are hiring 50 <strong>Java Full Stack </strong>Engineers with 3+ years of experience. If you already possess the required skills, you can proceed directly to the interview process—no training needed. However, if you require upskilling, training is available to help you bridge the gap. Trump Technologies is committed to helping you secure a position with our prestigious clients.</p>
-            
-            <div class="highlight-box">
-                <p><strong>Requirements</strong></p>
-            </div>
-            <ul class="requirements-list">
-                <li>Minimum 3 years of experience (or)</li>
-                <li>Gap (Graduated before June 2022), CSE preferred</li>
-                <li>Skills augmentation for candidates who need training</li>
-            </ul>
-
-            <div class="highlight-box">
-                <p><strong>Important Details:</strong></p>
-            </div>
-            <div class="date-box"><i class="fa fa-calendar"></i> <strong>Interviews for Selection:</strong> Happening Everyday.!</div>
-            <div class="date-box"><i class="fa fa-check-circle"></i> <strong>Training Onboarding:</strong> Immediately After the Interview</div>
-            <div class="date-box"><i class="fa fa-chevron-circle-right"></i> <strong>Client Interviews:</strong> Ongoing</div>
-            <div class="date-box"><i class="fa fa-clock-o"></i> <strong>Working Hours:</strong> 10:00 AM - 8:00 PM, 6 Days a Week</div>
-            <div class="date-box"><i class="fa fa-map-marker"></i><strong>Location:</strong>Trump Technologies #601, Nagasuri Plaza (Bank Of India building), Behind Maithrivanam, Ameerpet, Hyderabad - 500038.</div>
-
-            <div class="highlight-box">
-                <p><strong>Application Process:</strong></p>
-            </div>
-            <ul class="process-list">
-                <li>Fill the interest form</li>
-                <li>1st round - Online assessment</li>
-                <li>2nd round - Interview</li>
-                <li>3rd - Fill the candidate self-assessment form</li>
-                <li>Pay ₹25,000</li>
-                <li>The course duration is 3-6 months</li>
-                <li>Interviews with our clients</li>
-                <li>Onboarding as an employee in Trump Technologies or its Partner Companies</li>
-                <li>Build your career for a minimum of 2 years with us</li>
-                <li>Upskill every Saturday at office and grow to a Senior Position</li>
-            </ul>
-
-            <div class="highlight-box">
-                <p><strong>Contact Details:</strong></p>
-            </div>
-            <div class="date-box">
-                <i class="fa fa-phone"></i> <strong>Phone:</strong> 
-                <a href="tel:+919019320315">+91 90193 20315</a>
-            </div>
-            <div class="date-box">
-                <i class="fa fa-globe"></i> <strong>Website:</strong> 
-                <a href="https://trumptechnologies.in/index.html" target="_blank">trumptechnologies.in</a>
-            </div>
-
-            <div class="highlight-box">
-                <p><strong>Training Curriculum</strong></p>
-            </div>
-            <p>Our comprehensive training program covers all aspects of Java Full Stack development, including Core Java, Advanced Java, Spring Boot, Microservices and more.</p>
-            <p>Download the detailed syllabus to explore the curriculum:</p>
-            <a href="https://docs.google.com/spreadsheets/d/1TCkjhYPRSGzQjITOomFWzr934LqnhdXJUadl7F0hAro/edit?usp=sharing" class="syllabus-link" target="_blank">Download Syllabus</a>
-
-            <div class="row row-spaced" style="justify-content: center;">
-                <div class="col-lg-12 text-center">
-                    <a href="https://forms.gle/cAU8C3TQVFzh9ZNU9" class="apply-button" target="_blank">
-                        Apply Now <i class="fa fa-arrow-right"></i>
-                    </a>
                 </div>
             </div>
         </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row copyright-border">
+                    <div class="col-lg-6 col-md-6 col-sm-12 co-12 column">
+                        <p class="text-size-16">Copyright ©2025 Trump Technologies All Rights Reserved</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 co-12 d-md-block d-none">
+                        <div class="social-icons position-relative">
+                            <ul class="list-unstyled position-absolute">
+                                <li><a href="https://www.linkedin.com/company/trumptechnologies" class="text-decoration-none" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in social-networks"></i></a></li>
+                                <li><a href="https://trumptechnologies.in/" class="text-decoration-none"><i class="fa-brands fa-google-plus-g social-networks"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <figure class="footer-dotimage mb-0">
+            <img src="./assets/images/footer-dotimage.png" alt="" class="img-fluid">
+        </figure>
+        <figure class="footer-leftlayer mb-0">
+            <img src="./assets/images/footer-leftlayer.png" alt="" class="img-fluid">
+        </figure>
     </div>
 </section>
+<!-- Latest compiled JavaScript -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/video_link.js"></script>
+<script src="./assets/js/video.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<script src="assets/js/custom-carousel.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/animation_links.js"></script>
+<script src="assets/js/animation.js"></script>
+<script>
+function sendReachUsEmail() {
+    const email = document.getElementById("reachUsEmail").value;
+    const subject = encodeURIComponent("Reach Out from " + email);
+    const body = encodeURIComponent("Hello Trump Technologies Team,\n\nI would like to get in touch with you.\n\nMy Email: " + email);
+    const mailtoLink = `mailto:it@trumptechnologies.in?subject=${subject}&body=${body}`;
+    
+    window.location.href = mailtoLink;
 
-        <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><i class="fas fa-times"></i></div>
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index-2.html"><img src="assets/images/logo-2.png" alt="" title=""></a></div>
-                <div class="menu-outer"></div>
-                <div class="contact-info">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li>3rd Floor, Ratnam Chambers, Phase - II, H.No.1-62/172, Plot No.172, Kavuri Hills, Madhapur, Telangana 500081</li>
-                        <li><a href="tel:+919019320315">+91 90193 20315</a></li>
-                        <li><a href="mailto:Trumptechnologieshyd@gmail.com">Trumptechnologieshyd@gmail.com</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+    // Clear the input
+    document.getElementById("reachUsEmail").value = "";
 
-        <!-- Footer -->
-        <footer class="main-footer light-footer">
-            <div class="widget-section p_relative pt_80 pb_100">
-                <div class="auto-container">
-                    <div class="row clearfix">
-                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget logo-widget mr_30">
-                                <figure class="logo-box" style="display: flex; align-items: center;">
-                                    <a href="index.html">
-                                        <img src="assets/images/logos.jpeg" alt="Trump Technologies Logo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #333;">
-                                    </a>
-                                    <span style="margin-left: 8px; font-size: 18px; font-weight: bold; color: #ffff;">Trump Technologies</span>
-                                </figure>
-                                <p>Since 2023, Trump Technologies has Augmented Staff for 300+ Corporates in India and US</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-12 footer-column">
-                            <div class="footer-widget links-widget">
-                                <div class="widget-title">
-                                    <h4>Company</h4>
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="links-list clearfix">
-                                        <li><a href="about.html">About Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-12 footer-column">
-                            <div class="footer-widget links-widget">
-                                <div class="widget-title">
-                                    <h4>Help & Support</h4>
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="links-list clearfix">
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                        <li><a href="faq.html">General FAQ</a></li>
-                                        <li><a href="index.html">Terms & Conditions</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="auto-container">
-                    <div class="bottom-inner">
-                        <div class="copyright"><p>Copyright © 2025 <a href="index.html">Trump Technologies</a> All rights reserved.</p></div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Scroll to Top -->
-        <div class="scroll-to-top">
-            <svg class="scroll-top-inner" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-            </svg>
-        </div>
-    </div>
-
-    <!-- jQuery Plugins -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/validation.js"></script>
-    <script src="assets/js/jquery.fancybox.js"></script>
-    <script src="assets/js/appear.js"></script>
-    <script src="assets/js/isotope.js"></script>
-    <script src="assets/js/parallax-scroll.js"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/scrolltop.min.js"></script>
-    <script src="assets/js/gsap.js"></script>
-    <script src="assets/js/ScrollTrigger.js"></script>
-    <script src="assets/js/SplitText.js"></script>
-    <script src="assets/js/language.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
-    <script src="assets/js/lenis.min.js"></script>
-    <script src="assets/js/odometer.js"></script>
-    <script src="assets/js/jquery.lettering.min.js"></script>
-    <script src="assets/js/jquery.circleType.js"></script>
-    <script src="assets/js/script.js"></script>
+    return false; // Prevent default form submission
+}
+</script>
 </body>
 </html>
