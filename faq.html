@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-    <title>Java+Angular | Trump Technologies</title>
+    <title>FAQ | Trump Technologies</title>
     <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
-     <link rel="icon" type="image/png" sizes="192x192"  href="assets/trump/tp.jpg">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/trump/tp.jpg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/trump/tp.jpg">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/trump/tp.jpg">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/trump/tp.jpg">
-
     <link rel="manifest" href="assets/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -29,74 +28,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-    .syllabus-link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 14px; /* Reduced font size */
-        padding: 8px 16px; /* Reduced padding */
-        margin: 10px 5px; /* Adjusted margin for spacing */
-        border: 1px solid #007bff;
-        border-radius: 5px;
-        transition: background-color 0.3s, color 0.3s;
-        min-width: 120px; /* Reduced width */
-        height: 36px; /* Reduced height */
-    }
-    .syllabus-link:hover {
-        background-color: #007bff;
-        color: #fff;
-    }
-    .apply-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #ff6200;
-        color: #fff;
-        padding: 8px 16px; /* Reduced padding */
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 14px; /* Reduced font size */
-        margin: 10px 5px; /* Adjusted margin for spacing */
-        transition: background-color 0.3s;
-        min-width: 120px; /* Reduced width */
-        height: 36px; /* Reduced height */
-    }
-    .apply-button:hover {
-        background-color: #e55a00;
-    }
-    .apply-button i {
-        margin-left: 8px;
-        font-size: 14px; /* Reduced icon size */
-    }
-    .button-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px; /* Space between buttons */
-        margin-top: 20px;
-    }
-    /* Ensure buttons stack vertically on very small screens */
-    @media (max-width: 576px) {
-        .syllabus-link, .apply-button {
-            min-width: 100px; /* Slightly smaller for mobile */
-            font-size: 12px; /* Smaller font for mobile */
-            padding: 6px 12px; /* Smaller padding for mobile */
-            height: 32px; /* Smaller height for mobile */
-        }
-    }
-</style>
+        /* Increase font weight for FAQ questions */
+#faqAccordion .card-header .btn-link {
+    font-weight: 700; /* Bold */
+}
+
+/* Increase font weight for FAQ answers */
+#faqAccordion .card-body {
+    font-weight: 500; /* Medium-bold, adjust as needed */
+}
+
+/* Optionally, increase font weight for specific elements within answers */
+#faqAccordion .card-body strong,
+#faqAccordion .card-body ul li {
+    font-weight: 700; /* Bold for strong tags and list items */
+}
+    </style>
 </head>
 
 <body>
 <!-- Header -->
-<div class="sub-banner sub-banner4">
-    <!-- <figure class="sub-bannerleftlayer mb-0">
-        <img src="./assets/images/sub-bannerleftlayer.png" alt="" class="img-fluid">
-    </figure> -->
+<div class="sub-banner">
     <header class="header">
         <div class="main-header">
             <div class="container-fluid">
@@ -137,10 +89,10 @@
                 <a class="dropdown-item" href="./data_engineering.html">DATA ENGINEERING</a>
             </div>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="./java+angular.html">Java+Angular</a>
         </li>
-         <li class="nav-item">
+         <li class="nav-item active">
             <a class="nav-link" href="./faq.html">FAQ's</a>
         </li>
 
@@ -168,124 +120,109 @@
                         <figure class="service-rightcircle mb-0">
                             <img src="./assets/images/service-rightcircle.png" alt="" class="img-fluid">
                         </figure>
-                        <h1 class="text-white">Java+Angular Training</h1>
-                        <p>Join our most trusted Talent Programs and build a rewarding career in tech.</p>
+                        <h1 class="text-white">Frequently Asked Questions</h1>
+                        <p>Find answers to common questions about our programs and services.</p>
                         <div class="box">
                             <span class="mb-0">Home</span>
                             <figure class="mb-0 arrow"><img src="./assets/images/button-arrow.png" alt="" class="img-fluid"></figure>
-                            <span class="mb-0 box_span">Java+Angular</span>
+                            <span class="mb-0 box_span">FAQ</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>    
     </section>
+    <figure class="banner-circleright mb-0">
+        <img src="./assets/images/banner-circleright.png" class="img-fluid" alt="">
+    </figure>
+    <figure class="sub-bannerrightlayer mb-0">
+        <img src="./assets/images/sub-bannerrightlayer.png" alt="" class="img-fluid">
+    </figure>
 </div>
-<br><br><br><br>
-<br><br>
-
-<!-- Process Section -->
-<section class="process-section">
-    <!-- <figure class="service-rightlayer mb-0">
-        <img src="./assets/images/service-leftlayer.png" alt="" class="img-fluid">
-    </figure> -->
+<!-- FAQ Section -->
+<section class="faq-section">
+    <figure class="offer-toplayer mb-0">
+        <img src="./assets/images/offer-toplayer.png" alt="" class="img-fluid">
+    </figure>
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="servicepage_content" data-aos="fade-right">
-                    <h6>Our Process</h6>
-                    <h2>Your Path to a Tech Career</h2>
-                    <p>As the most trusted training provider, we guide you through a structured process to join our Talent Programs, partnering with leading organizations across India to ensure your career success.</p>
-                    <p>Our comprehensive training program covers all aspects of Java Full Stack development, including Core Java, Advanced Java, Spring Boot, Microservices and more.</p>
-                    <p>Download the detailed syllabus to explore the curriculum:</p>
-<div class="button-container">
-    <a href="https://docs.google.com/spreadsheets/d/1qf4dERtF_nxYVWsMrXmqm3WRBpFGv6pdX4kO6BNK9Pg/export?format=xlsx" class="btn btn-primary syllabus-link" target="_blank">
-        Download Syllabus
-    </a>
-    <a href="https://forms.gle/TyX4HwLTRtm36XZZ7" class="btn btn-success apply-button" target="_blank">
-        Apply Now 
-    </a>
-</div>
-
-<br><br>
-
-
-
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="faq_content" data-aos="fade-up">
+                    <h6>FAQs</h6>
+                    <h2>Common Questions</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Who are eligible for this Programme?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <strong>Master Batch:</strong> Pass out from 2015 to 2022 from any graduation who wants to build their career as Developer or Programmer.<br><br>
+                                    <strong>Graduate Batch:</strong> Pass out from 2023 to 2025 B-Tech from any stream.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What is the difference between Master and Graduate Batches?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    We are offering Job 100% guarantee for Master Batch candidates who are passed out from 2015 to 2022 from any graduation.<br><br>
+                                    We are providing placement assistance for Graduate Batch.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What is the course duration?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <strong>For Master Batch:</strong> It would be 3 to 4 months full-day training.<br><br>
+                                    <strong>For Graduate Batch:</strong> It would be 4 to 5 months full-day training.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        How do you differentiate Trump Technologies from other Training institutes?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>35+ Mid to MNC clients exclusively hiring for Java Full Stack.</li>
+                                        <li>Build and deploy at least 3 Full Stack apps on AWS to highlight your resume.</li>
+                                        <li>Participate in freelance projects through Trump Technologies after getting placement to earn even more.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="process-box" data-aos="fade-up">
-                    <figure class="process-icon">
-                        <img src="./assets/images/process-icon1.png" alt="" class="img-fluid">
-                    </figure>
-                    <h4>Step 1: Apply</h4>
-                    <p class="text-size-18">Fill the interest form to start your journey with our Talent Programs.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="process-box" data-aos="fade-up">
-                    <figure class="process-icon">
-                        <img src="./assets/images/process-icon2.png" alt="" class="img-fluid">
-                    </figure>
-                    <h4>Step 2: Assessments</h4>
-                    <p class="text-size-18">Complete an online assessment followed by an interview to showcase your skills.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="process-box" data-aos="fade-up">
-                    <figure class="process-icon">
-                        <img src="./assets/images/process-icon3.png" alt="" class="img-fluid">
-                    </figure>
-                    <h4>Step 3: Self-Assessment</h4>
-                    <p class="text-size-18">Fill the candidate self-assessment form to evaluate your strengths.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="process-box" data-aos="fade-up">
-                    <figure class="process-icon">
-                        <img src="./assets/images/process-icon4.png" alt="" class="img-fluid">
-                    </figure>
-                    <h4>Step 4: Enroll</h4>
-                    <p class="text-size-18">Pay ₹25,000 to join our 3-6 month Talent Program course.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="process-box" data-aos="fade-up">
-                    <figure class="process-icon">
-                        <img src="./assets/images/process-icon5.png" alt="" class="img-fluid">
-                    </figure>
-                    <h4>Step 5: Interviews</h4>
-                    <p class="text-size-18">Attend interviews with our esteemed clients for placement opportunities.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="process-box" data-aos="fade-up">
-                    <figure class="process-icon">
-                        <img src="./assets/images/process-icon6.png" alt="" class="img-fluid">
-                    </figure>
-                    <h4>Step 6: Onboarding</h4>
-                    <p class="text-size-18">Join Trump Technologies or our partner companies as an employee.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="process-box" data-aos="fade-up">
-                    <figure class="process-icon">
-                        <img src="./assets/images/process-icon7.png" alt="" class="img-fluid">
-                    </figure>
-                    <h4>Step 7: Career Growth</h4>
-                    <p class="text-size-18">Commit to a minimum 2-year journey with us, upskilling every Saturday at our office to grow into a senior position.</p>
-                </div>
-            </div>
-        </div>
-         
     </div>
-    <!-- <figure class="service-leftlayer mb-0">
-        <img src="./assets/images/service-rightlayer.png" alt="" class="img-fluid">
-    </figure> -->
+    <figure class="offer-bottomlayer mb-0">
+        <img src="./assets/images/offer-bottomlayer.png" alt="" class="img-fluid">
+    </figure>
 </section>
-<br><br><br><br>
 <!-- Footer -->
 <section class="footer-section">
     <div class="container">
@@ -308,7 +245,7 @@
                                 </figure>
                                 <div class="content">
                                     <span class="text-white">Call us:</span>
-                                    <a class="text-size-18 mb-0 text text-decoration-none" href="tel: (+91)8977177745">(+91)8977177745</a>
+                                    <a class="text-size-18 mb-0 text text-decoration-none" href="tel:(+91)8977177745">(+91)8977177745</a>
                                 </div>
                             </div>
                             <div class="lower-content">
@@ -328,7 +265,7 @@
                         <h4 class="heading text-white">Quick Links</h4>
                         <ul class="list-unstyled mb-0">
                             <li><a href="./index.html" class="text-size-18 text text-decoration-none">Home</a></li>
-                            <li><a href="./faq.html" class="text-size-18 text text-decoration-none">FAQs</a></li>
+                            <li><a href="./faq.html" class="text-size-18 text text-decoration-none">FAQ</a></li>
                             <li><a href="./contact.html" class="text-size-18 text text-decoration-none">Contact</a></li>
                         </ul>
                     </div>
@@ -347,7 +284,6 @@
                     <div class="icons">
                         <h4 class="heading mb-0 text-white">Reach Us</h4>
                         <h4 class="heading text-white">We’d Love to Hear From You!</h4><br>
-                        <!-- Email Input -->
                         <form id="reachusform" onsubmit="return sendReachUsEmail()">
                             <div class="form-group mb-2">
                                 <input type="email" class="form_style" placeholder="Enter Email Address:" name="email" id="reachUsEmail" required> 
@@ -396,20 +332,5 @@
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/animation_links.js"></script>
 <script src="assets/js/animation.js"></script>
-<script>
-function sendReachUsEmail() {
-    const email = document.getElementById("reachUsEmail").value;
-    const subject = encodeURIComponent("Reach Out from " + email);
-    const body = encodeURIComponent("Hello Trump Technologies Team,\n\nI would like to get in touch with you.\n\nMy Email: " + email);
-    const mailtoLink = `mailto:it@trumptechnologies.in?subject=${subject}&body=${body}`;
-    
-    window.location.href = mailtoLink;
-
-    // Clear the input
-    document.getElementById("reachUsEmail").value = "";
-
-    return false; // Prevent default form submission
-}
-</script>
 </body>
 </html>

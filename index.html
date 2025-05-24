@@ -28,18 +28,25 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .banner_content {
+    margin-top: 0 !important; /* Removes any top margin */
+    padding-top: 0 !important; /* Removes any top padding */
+}
+    </style>
 </head>
+
 
 <body>
 <!-- Header -->
 <div class="banner_outer">
-    <header class="header">
+     <header class="header">
         <div class="main-header">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light d-flex align-items-center">
                     <a href="index.html" class="logo-link">
-                        <img src="assets/trump/tp.jpg" alt="Trump Technologies Logo" 
-                             style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #333; margin-right: 10px;">
+                        <img src="assets/trump/tpss.jpg" alt="Trump Technologies Logo" 
+                             style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #333; margin-right: 10px;">
                     </a>
                     <a class="navbar-brand" href="./index.html">Trump Technologies</a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
@@ -48,71 +55,53 @@
                         <span class="navbar-toggler-icon"></span>
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./talent-programs.html">Programs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./java+angular.html">Java+Angular</a>
-                            </li>
-                            <li class="nav-space nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-                        </ul>
-                        <div class="last_list">
-                            <figure class="nav-phoneimage mb-0"><img class="img-fluid" src="./assets/images/nav-phoneimage.png" alt=""></figure>
-                            <div class="content">
-                                <p class="text-size-18 text-white">Call Anytime:</p>
-                                <a class="text-decoration-none last_list_atag" href="tel:(+91)8977177745">(+91)8977177745</a>
-                            </div>
-                        </div>
-                    </div>
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+        </li>
+        <!-- Dropdown for Programs -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./talent-programs.html" id="navbarDropdownPrograms" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Programs
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPrograms">
+                <a class="dropdown-item" href="./talent-programs.html">All Programs</a>
+                <a class="dropdown-item" href="./web.html">WEB DEVELOPMENT</a>
+                <a class="dropdown-item" href="./mobile.html">MOBILE APP DEVELOPMENT</a>
+                <a class="dropdown-item" href="./data_science.html">DATA SCIENCE</a>
+                <a class="dropdown-item" href="./data_analytics.html">DATA ANALYTICS</a>
+                <a class="dropdown-item" href="./design.html">DESIGN</a>
+                <a class="dropdown-item" href="./qa.html">QA</a>
+                <a class="dropdown-item" href="./cloud.html">CLOUD AND DEVOPS</a>
+                <a class="dropdown-item" href="./data_engineering.html">DATA ENGINEERING</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./java+angular.html">Java+Angular</a>
+        </li>
+         <li class="nav-item">
+            <a class="nav-link" href="./faq.html">FAQ's</a>
+        </li>
+
+        <li class="nav-space nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+    </ul>
+    <!-- <div class="last_list">
+        <figure class="nav-phoneimage mb-0"><img class="img-fluid" src="./assets/images/nav-phoneimage.png" alt=""></figure>
+        <div class="content">
+            <p class="text-size-18 text-white">Call Anytime:</p>
+            <a class="text-decoration-none last_list_atag" href="tel:(+91)8977177745">(+91)8977177745</a>
+        </div>
+    </div> -->
+</div>
                 </nav>
             </div>
         </div>
-        <style>
-            .navbar-brand {
-                font-size: 1.5rem;
-                margin: 0;
-                padding: 0 10px;
-                line-height: 40px; /* Match logo height */
-            }
-            .logo-link {
-                display: inline-block;
-                line-height: 40px; /* Match logo height */
-            }
-            .navbar-nav {
-                display: flex;
-                align-items: center;
-            }
-            .nav-item {
-                margin-left: 15px;
-            }
-            .last_list {
-                display: flex;
-                align-items: center;
-                margin-left: 20px;
-            }
-            @media (max-width: 991px) {
-                .navbar-nav {
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                .nav-item {
-                    margin: 5px 0;
-                }
-                .last_list {
-                    margin: 10px 0;
-                }
-            }
-        </style>
     </header>
     <figure class="banner-layerright mb-0">
         <img src="./assets/images/banner-layerright.png" class="img-fluid" alt="">
@@ -131,19 +120,9 @@
                         <figure class="banner-line mb-0"><img src="./assets/images/banner-line.png" alt="" class="img-fluid"></figure>
                         <h6 class="text-white">WE PROVIDE</h6>
                         <h1 class="text-white">IT Services, Corporate Training & Placements</h1>
-                        <p>We empower businesses and individuals with cutting-edge IT solutions, industry-leading corporate training, and seamless placement services.</p>
-                        <a class="get_started button1 text-white text-decoration-none" href="./contact.html">Get Started
-                            <figure class="mb-0"><img src="./assets/images/button-arrow.png" alt="" class="img-fluid"></figure>
-                        </a>
-                        <a class="get_started button2 text-white text-decoration-none" href="./contact.html">Contact Us
-                            <figure class="mb-0"><img src="./assets/images/button-arrow.png" alt="" class="img-fluid"></figure>
-                        </a>
-                        <figure class="banner-circleleft mb-0">
-                            <img src="./assets/images/banner-circleleft.png" class="img-fluid" alt="">
-                        </figure>
-                        <figure class="banner-dotleft mb-0">
-                            <img src="./assets/images/banner-dotleft.png" class="img-fluid" alt="">
-                        </figure>
+                        <!-- <p>We empower businesses and individuals with cutting-edge IT solutions, industry-leading corporate training, and seamless placement services.</p> -->
+                       
+                        
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-12 col-sm-12 col-12">
@@ -157,7 +136,8 @@
         </div>
     </section>
 </div>
-<br><br>
+<br><br><br><br>
+
 
 <!-- Courses -->
 <section class="courses-section">
@@ -413,7 +393,7 @@
                         <h4 class="heading text-white">Quick Links</h4>
                         <ul class="list-unstyled mb-0">
                             <li><a href="./index.html" class="text-size-18 text text-decoration-none">Home</a></li>
-                            <li><a href="./talent-programs.html" class="text-size-18 text text-decoration-none">Talent Programs</a></li>
+                            <li><a href="./faq.html" class="text-size-18 text text-decoration-none">FAQs</a></li>
                             <li><a href="./contact.html" class="text-size-18 text text-decoration-none">Contact</a></li>
                         </ul>
                     </div>
@@ -421,8 +401,11 @@
                 <div class="col-lg-2 col-md-2 col-sm-12 col-12 d-lg-block d-none">
                     <div class="links">
                         <h4 class="heading text-white">Company</h4>
+                        
                         <ul class="list-unstyled mb-0">
                             <li><a href="./about.html" class="text-size-18 text text-decoration-none">About</a></li>
+                            <li><a href="./talent-programs.html" class="text-size-18 text text-decoration-none">Talent Programs</a></li>
+
                         </ul>
                     </div>
                 </div>
