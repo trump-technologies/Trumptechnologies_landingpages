@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-    <title>Web Development Courses | Trump Technologies</title>
-    <!-- /SEO Ultimate -->
+    <title>Playwright Training | Trump Technologies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/trump/tpss.jpg">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/trump/tp.jpg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/trump/tp.jpg">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/trump/tp.jpg">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/trump/tp.jpg">
@@ -28,64 +27,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .syllabus-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
-            padding: 8px 16px;
-            margin: 10px 5px;
-            border: 1px solid #007bff;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-            min-width: 120px;
-            height: 36px;
+    .syllabus-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 8px 16px;
+        margin: 10px 5px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        min-width: 120px;
+        height: 36px;
+    }
+    .syllabus-link:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+    .apply-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff6200;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 10px 5px;
+        transition: background-color 0.3s;
+        min-width: 120px;
+        height: 36px;
+    }
+    .apply-button:hover {
+        background-color: #e55a00;
+    }
+    .apply-button i {
+        margin-left: 8px;
+        font-size: 14px;
+    }
+    .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    @media (max-width: 576px) {
+        .syllabus-link, .apply-button {
+            min-width: 100px;
+            font-size: 12px;
+            padding: 6px 12px;
+            height: 32px;
         }
-        .syllabus-link:hover {
-            background-color: #007bff;
-            color: #fff;
-        }
-        .apply-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #ff6200;
-            color: #fff;
-            padding: 8px 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
-            margin: 10px 5px;
-            transition: background-color 0.3s;
-            min-width: 120px;
-            height: 36px;
-        }
-        .apply-button:hover {
-            background-color: #e55a00;
-        }
-        .apply-button i {
-            margin-left: 8px;
-            font-size: 14px;
-        }
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        @media (max-width: 576px) {
-            .syllabus-link, .apply-button {
-                min-width: 100px;
-                font-size: 12px;
-                padding: 6px 12px;
-                height: 32px;
-            }
-        }
+    }
     </style>
 </head>
 
@@ -123,7 +122,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownPrograms">
                 <a class="dropdown-item" href="./talent-programs.html">All Programs</a>
                 <a class="dropdown-item" href="./java+angular.html">Java+Angular</a>
-                <a class="dropdown-item active" href="./web.html">WEB DEVELOPMENT</a>
+                <a class="dropdown-item" href="./web.html">WEB DEVELOPMENT</a>
                 <a class="dropdown-item" href="./mobile.html">MOBILE APP DEVELOPMENT</a>
                 <a class="dropdown-item" href="./data_science.html">DATA SCIENCE</a>
                 <a class="dropdown-item" href="./data_analytics.html">DATA ANALYTICS</a>
@@ -137,9 +136,9 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUpskill" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Tech Tools
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownUpskill">
+            <div class="dropdown-menu active" aria-labelledby="navbarDropdownUpskill">
                 <a class="dropdown-item" href="./hubspot.html">HubSpot</a>
-                <a class="dropdown-item" href="./playwright.html">Playwright</a>
+                <a class="dropdown-item active" href="./playwright.html">Playwright</a>
             </div>
         </li>
          
@@ -160,12 +159,12 @@
                         <figure class="service-rightcircle mb-0">
                             <img src="./assets/images/service-rightcircle.png" alt="" class="img-fluid">
                         </figure>
-                        <h1 class="text-white">Web Development Courses</h1>
-                        <p>Master full-stack web development with our industry-leading Java, MERN, and Python programs.</p>
+                        <h1 class="text-white">Playwright Training</h1>
+                        <p>Join our most trusted Talent Programs and build a rewarding career in tech.</p>
                         <div class="box">
                             <span class="mb-0">Home</span>
                             <figure class="mb-0 arrow"><img src="./assets/images/button-arrow.png" alt="" class="img-fluid"></figure>
-                            <span class="mb-0 box_span">Web Development</span>
+                            <span class="mb-0 box_span">Playwright</span>
                         </div>
                     </div>
                 </div>
@@ -173,80 +172,100 @@
         </div>    
     </section>
 </div>
-<!-- Web Development Courses Section -->
-<section class="aboutoffer-section">
-    <figure class="service-rightlayer mb-0">
-        <img src="./assets/images/service-leftlayer.png" alt="" class="img-fluid">
-    </figure>
+<br><br><br><br>
+<br><br>
+
+<!-- Process Section -->
+<section class="process-section">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="offer_content">
-                    <h6>Our Programs</h6>
-                    <h2>Web Development Courses</h2>
-                    <p>Join Trump Technologies’ Web Development programs to gain hands-on skills in building modern web applications. Our courses in Java Full Stack, MERN, and Python Full Stack are designed to prepare you for a successful tech career with placement support.</p>
+                <div class="servicepage_content" data-aos="fade-right">
+                    <h6>Our Process</h6>
+                    <h2>Your Path to a Tech Career</h2>
+                    <p>As the most trusted training provider, we guide you through a structured process to join our Talent Programs, partnering with leading organizations across India to ensure your career success.</p>
+                    <p>Our comprehensive Playwright training program covers all aspects of automated browser testing, including writing robust test scripts, cross-browser testing, and integrating with CI/CD pipelines.</p>
+                    <!-- <p>Download the detailed syllabus to explore the curriculum:</p> -->
+                    <div class="button-container">
+                        <!-- <a href="https://docs.google.com/spreadsheets/d/1qf4dERtF_nxYVWsMrXmqm3WRBpFGv6pdX4kO6BNK9Pg/export?format=xlsx" class="btn btn-primary syllabus-link" target="_blank">
+                            Download Syllabus
+                        </a> -->
+                        <a href="https://forms.gle/TyX4HwLTRtm36XZZ7" class="btn btn-success apply-button" target="_blank">
+                            Apply Now 
+                        </a>
+                    </div>
+                    <br><br>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="mission-box" data-aos="fade-up">
-                    <figure class="mission-icon">
-                        <img src="./assets/images/mission-icon1.png" alt="" class="img-fluid">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon1.png" alt="" class="img-fluid">
                     </figure>
-                    <h4>Java Full Stack</h4>
-                    <p class="text-size-18">Learn front-end (HTML, CSS, JavaScript, Angular), middleware, and back-end (Core Java, Spring Boot, Microservices) to build robust web applications. Our program includes real-world projects and a 100% job guarantee for eligible candidates.</p>
-
-                    <!-- <div class="button-container">
-                        <a href="https://docs.google.com/spreadsheets/d/1qf4dERtF_nxYVWsMrXmqm3WRBpFGv6pdX4kO6BNK9Pg/export?format=xlsx" class="btn btn-primary syllabus-link" target="_blank">
-                            Download Syllabus
-                        </a>
-                        <a href="https://forms.gle/TyX4HwLTRtm36XZZ7" class="btn btn-success apply-button" target="_blank">
-                            Apply Now <i class="fa-thin fa-arrow-right"></i>
-                        </a>
-                    </div> -->
+                    <h4>Step 1: Apply</h4>
+                    <p class="text-size-18">Fill the interest form to start your journey with our Talent Programs.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="mission-box" data-aos="fade-up">
-                    <figure class="mission-icon">
-                        <img src="./assets/images/mission-icon2.png" alt="" class="img-fluid">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon2.png" alt="" class="img-fluid">
                     </figure>
-                    <h4>MERN Stack</h4>
-                    <p class="text-size-18">Master MongoDB, Express.js, React, and Node.js to create dynamic, scalable web apps. This course emphasizes modern JavaScript frameworks and includes live projects to enhance your portfolio.</p>
-                    <!-- <div class="button-container">
-                        <a href="https://docs.google.com/spreadsheets/d/placeholder-mern-syllabus/export?format=xlsx" class="btn btn-primary syllabus-link" target="_blank">
-                            Download Syllabus
-                        </a>
-                        <a href="https://forms.gle/placeholder-mern-apply" class="btn btn-success apply-button" target="_blank">
-                            Apply Now <i class="fa-thin fa-arrow-right"></i>
-                        </a>
-                    </div> -->
+                    <h4>Step 2: Assessments</h4>
+                    <p class="text-size-18">Complete an online assessment followed by an interview to showcase your skills.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="mission-box" data-aos="fade-up">
-                    <figure class="mission-icon">
-                        <img src="./assets/images/mission-icon3.png" alt="" class="img-fluid">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon3.png" alt="" class="img-fluid">
                     </figure>
-                    <h4>Python Full Stack</h4>
-                    <p class="text-size-18">Develop expertise in Python, Django/Flask, and front-end technologies (HTML, CSS, JavaScript) to build versatile web solutions. Includes hands-on training and placement assistance.</p>
-                    <!-- <div class="button-container">
-                        <a href="https://docs.google.com/spreadsheets/d/placeholder-python-syllabus/export?format=xlsx" class="btn btn-primary syllabus-link" target="_blank">
-                            Download Syllabus
-                        </a>
-                        <a href="https://forms.gle/placeholder-python-apply" class="btn btn-success apply-button" target="_blank">
-                            Apply Now <i class="fa-thin fa-arrow-right"></i>
-                        </a>
-                    </div> -->
+                    <h4>Step 3: Self-Assessment</h4>
+                    <p class="text-size-18">Fill the candidate self-assessment form to evaluate your strengths.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon4.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 4: Enroll</h4>
+                    <p class="text-size-18">Pay ₹25,000 to join our 3-6 month Talent Program course.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon5.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 5: Interviews</h4>
+                    <p class="text-size-18">Attend interviews with our esteemed clients for placement opportunities.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon6.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 6: Onboarding</h4>
+                    <p class="text-size-18">Join Trump Technologies or our partner companies as an employee.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="process-box" data-aos="fade-up">
+                    <figure class="process-icon">
+                        <img src="./assets/images/process-icon7.png" alt="" class="img-fluid">
+                    </figure>
+                    <h4>Step 7: Career Growth</h4>
+                    <p class="text-size-18">Commit to a minimum 2-year journey with us, upskilling every Saturday at our office to grow into a senior position.</p>
                 </div>
             </div>
         </div>
     </div>
-    <figure class="service-leftlayer mb-0">
-        <img src="./assets/images/service-rightlayer.png" alt="" class="img-fluid">
-    </figure>
 </section>
+<br><br><br><br>
 <!-- Footer -->
 <section class="footer-section">
     <div class="container">
@@ -269,7 +288,7 @@
                                 </figure>
                                 <div class="content">
                                     <span class="text-white">Call us:</span>
-                                    <a class="text-size-18 mb-0 text text-decoration-none" href="tel:(+91)8977177745">(+91)8977177745</a>
+                                    <a class="text-size-18 mb-0 text text-decoration-none" href="tel: (+91)8977177745">(+91)8977177745</a>
                                 </div>
                             </div>
                             <div class="lower-content">
@@ -284,7 +303,7 @@
                         </div>
                     </div>
                 </div>
- <div class="col-lg-2 col-md-3 col-sm-12 col-12 d-md-block d-none">
+                <div class="col-lg-2 col-md-3 col-sm-12 col-12 d-md-block d-none">
                     <div class="links list-pd">
                         <h4 class="heading text-white">Quick Links</h4>
                         <ul class="list-unstyled mb-0">
@@ -355,8 +374,6 @@
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/animation_links.js"></script>
 <script src="assets/js/animation.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
 function sendReachUsEmail() {
     const email = document.getElementById("reachUsEmail").value;
@@ -365,11 +382,8 @@ function sendReachUsEmail() {
     const mailtoLink = `mailto:it@trumptechnologies.in?subject=${subject}&body=${body}`;
     
     window.location.href = mailtoLink;
-
-    // Clear the input
     document.getElementById("reachUsEmail").value = "";
-
-    return false; // Prevent default form submission
+    return false;
 }
 </script>
 </body>
