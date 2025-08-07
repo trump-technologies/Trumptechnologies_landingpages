@@ -1,219 +1,354 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
+  <head>
     <title>Mobile App Development Courses | Trump Technologies</title>
     <!-- /SEO Ultimate -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/trump/tp.jpg">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/trump/tp.jpg">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/trump/tp.jpg">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/trump/tp.jpg">
-    <link rel="manifest" href="assets/images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/trump/tp.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/trump/tp.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/trump/tp.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/trump/tp.jpg"
+    />
+    <link rel="manifest" href="assets/images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Latest compiled and minified CSS -->
-    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/js/bootstrap.min.js">
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/js/bootstrap.min.js" />
     <!-- Font Awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <!-- StyleSheet link CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/special-classes.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/special-classes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
-        .syllabus-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
-            padding: 8px 16px;
-            margin: 10px 5px;
-            border: 1px solid #007bff;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-            min-width: 120px;
-            height: 36px;
-        }
-        .syllabus-link:hover {
-            background-color: #007bff;
-            color: #fff;
-        }
+      .syllabus-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 8px 16px;
+        margin: 10px 5px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        min-width: 120px;
+        height: 36px;
+      }
+      .syllabus-link:hover {
+        background-color: #007bff;
+        color: #fff;
+      }
+      .apply-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff6200;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 10px 5px;
+        transition: background-color 0.3s;
+        min-width: 120px;
+        height: 36px;
+      }
+      .apply-button:hover {
+        background-color: #e55a00;
+      }
+      .apply-button i {
+        margin-left: 8px;
+        font-size: 14px;
+      }
+      .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      @media (max-width: 576px) {
+        .syllabus-link,
         .apply-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #ff6200;
-            color: #fff;
-            padding: 8px 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
-            margin: 10px 5px;
-            transition: background-color 0.3s;
-            min-width: 120px;
-            height: 36px;
+          min-width: 100px;
+          font-size: 12px;
+          padding: 6px 12px;
+          height: 32px;
         }
-        .apply-button:hover {
-            background-color: #e55a00;
-        }
-        .apply-button i {
-            margin-left: 8px;
-            font-size: 14px;
-        }
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        @media (max-width: 576px) {
-            .syllabus-link, .apply-button {
-                min-width: 100px;
-                font-size: 12px;
-                padding: 6px 12px;
-                height: 32px;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-<!-- Header -->
-<div class="sub-banner sub-banner4">
-    <header class="header">
+  <body>
+    <!-- Header -->
+    <div class="sub-banner sub-banner4">
+      <header class="header">
         <div class="main-header">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg navbar-light d-flex align-items-center">
-                    <a href="index.html" class="logo-link">
-                        <img src="assets/trump/tpss.jpg" alt="Trump Technologies Logo" 
-                             style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #333; margin-right: 10px;">
+          <div class="container-fluid">
+            <nav
+              class="navbar navbar-expand-lg navbar-light d-flex align-items-center"
+            >
+              <a href="index.html" class="logo-link">
+                <img
+                  src="assets/trump/tpss.jpg"
+                  alt="Trump Technologies Logo"
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid #333;
+                    margin-right: 10px;
+                  "
+                />
+              </a>
+              <a class="navbar-brand" href="./index.html">Trump Technologies</a>
+              <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                  <!-- Dropdown for Programs -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="./talent-programs.html"
+                      id="navbarDropdownPrograms"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Training Programs
                     </a>
-                    <a class="navbar-brand" href="./index.html">Trump Technologies</a>
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
-                    aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
-        </li>
-        <!-- Dropdown for Programs -->
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="./talent-programs.html" id="navbarDropdownPrograms" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Training Programs
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownPrograms">
-                <a class="dropdown-item" href="./talent-programs.html">All Programs</a>
-                <a class="dropdown-item" href="./java+angular.html">Java+Angular</a>
-                <a class="dropdown-item" href="./web.html">WEB DEVELOPMENT</a>
-                <a class="dropdown-item active" href="./mobile.html">MOBILE APP DEVELOPMENT</a>
-                <a class="dropdown-item" href="./data_science.html">DATA SCIENCE</a>
-                <a class="dropdown-item" href="./data_analytics.html">DATA ANALYTICS</a>
-                <a class="dropdown-item" href="./design.html">DESIGN</a>
-                <a class="dropdown-item" href="./qa.html">QA</a>
-                <a class="dropdown-item" href="./cloud.html">CLOUD AND DEVOPS</a>
-                <a class="dropdown-item" href="./data_engineering.html">DATA ENGINEERING</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUpskill" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Tech Tools
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownUpskill">
-                <a class="dropdown-item" href="./hubspot.html">HubSpot</a>
-                <a class="dropdown-item" href="./playwright.html">Playwright</a>
-            </div>
-        </li>
-         
-        <li class="nav-space nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-        </li>
-    </ul>
-</div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <section class="banner-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="banner_content" data-aos="fade-up">
-                        <figure class="service-rightcircle mb-0">
-                            <img src="./assets/images/service-rightcircle.png" alt="" class="img-fluid">
-                        </figure>
-                        <h1 class="text-white">Mobile App Development Courses</h1>
-                        <p>Build cutting-edge mobile applications with our industry-leading React Native, Flutter, and Kotlin programs.</p>
-                        <div class="box">
-                            <span class="mb-0">Home</span>
-                            <figure class="mb-0 arrow"><img src="./assets/images/button-arrow.png" alt="" class="img-fluid"></figure>
-                            <span class="mb-0 box_span">Mobile App Development</span>
-                        </div>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownPrograms"
+                    >
+                      <a class="dropdown-item" href="./talent-programs.html"
+                        >All Programs</a
+                      >
+                      <a class="dropdown-item" href="./java+angular.html"
+                        >Java+Angular</a
+                      >
+                      <a class="dropdown-item" href="./web.html"
+                        >WEB DEVELOPMENT</a
+                      >
+                      <a class="dropdown-item active" href="./mobile.html"
+                        >MOBILE APP DEVELOPMENT</a
+                      >
+                      <a class="dropdown-item" href="./data_science.html"
+                        >DATA SCIENCE</a
+                      >
+                      <a class="dropdown-item" href="./data_analytics.html"
+                        >DATA ANALYTICS</a
+                      >
+                      <a class="dropdown-item" href="./design.html">DESIGN</a>
+                      <a class="dropdown-item" href="./qa.html">QA</a>
+                      <a class="dropdown-item" href="./cloud.html"
+                        >CLOUD AND DEVOPS</a
+                      >
+                      <a class="dropdown-item" href="./data_engineering.html"
+                        >DATA ENGINEERING</a
+                      >
                     </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdownUpskill"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Tech Tools
+                    </a>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownUpskill"
+                    >
+                      <a class="dropdown-item" href="./hubspot.html">HubSpot</a>
+                      <a class="dropdown-item" href="./playwright.html"
+                        >Playwright</a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="nav-space nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="banner-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="banner_content" data-aos="fade-up">
+                <figure class="service-rightcircle mb-0">
+                  <img
+                    src="./assets/images/service-rightcircle.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </figure>
+                <h1 class="text-white">Mobile App Development Courses</h1>
+                <p>
+                  Build cutting-edge mobile applications with our
+                  industry-leading React Native, Flutter, and Kotlin programs.
+                </p>
+                <div class="box">
+                  <span class="mb-0">Home</span>
+                  <figure class="mb-0 arrow">
+                    <img
+                      src="./assets/images/button-arrow.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </figure>
+                  <span class="mb-0 box_span">Mobile App Development</span>
                 </div>
+              </div>
             </div>
-        </div>    
-    </section>
-</div>
-<!-- Mobile App Development Courses Section -->
-<section class="aboutoffer-section">
-    <figure class="service-rightlayer mb-0">
-        <img src="./assets/images/service-leftlayer.png" alt="" class="img-fluid">
-    </figure>
-    <div class="container">
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Mobile App Development Courses Section -->
+    <section class="aboutoffer-section">
+      <figure class="service-rightlayer mb-0">
+        <img
+          src="./assets/images/service-leftlayer.png"
+          alt=""
+          class="img-fluid"
+        />
+      </figure>
+      <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="offer_content">
-                    <h6>Our Programs</h6>
-                    <h2>Mobile App Development Courses</h2>
-                    <p>Join Trump Technologies’ Mobile App Development programs to gain expertise in building high-performance mobile applications. Our courses in React Native, Flutter, and Kotlin are designed to prepare you for a thriving career in mobile development with placement support.</p>
-                </div>
+          <div class="col-12">
+            <div class="offer_content">
+              <h6>Our Programs</h6>
+              <h2>Mobile App Development Courses</h2>
+              <p>
+                Join Trump Technologies’ Mobile App Development programs to gain
+                expertise in building high-performance mobile applications. Our
+                courses in React Native, Flutter, and Kotlin are designed to
+                prepare you for a thriving career in mobile development with
+                placement support.
+              </p>
             </div>
+          </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="mission-box" data-aos="fade-up">
-                    <figure class="mission-icon">
-                        <img src="./assets/images/mission-icon1.png" alt="" class="img-fluid">
-                    </figure>
-                    <h4>React Native</h4>
-                    <p class="text-size-18">Learn to build cross-platform mobile apps for iOS and Android using JavaScript and React. This course includes hands-on projects to create real-world apps, enhancing your portfolio for top tech roles.</p>
-                    <div class="button-container">
-                        <!-- <a href="https://docs.google.com/spreadsheets/d/placeholder-react-native-syllabus/export?format=xlsx" class="btn btn-primary syllabus-link" target="_blank">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="mission-box" data-aos="fade-up">
+              <figure class="mission-icon">
+                <img
+                  src="./assets/images/mission-icon1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </figure>
+              <h4>React Native</h4>
+              <p class="text-size-18">
+                Learn to build cross-platform mobile apps for iOS and Android
+                using JavaScript and React. This course includes hands-on
+                projects to create real-world apps, enhancing your portfolio for
+                top tech roles.
+              </p>
+              <div class="button-container">
+                <!-- <a href="https://docs.google.com/spreadsheets/d/placeholder-react-native-syllabus/export?format=xlsx" class="btn btn-primary syllabus-link" target="_blank">
                             Download Syllabus
                         </a>
                         <a href="https://forms.gle/placeholder-react-native-apply" class="btn btn-success apply-button" target="_blank">
                             Apply Now <i class="fa-thin fa-arrow-right"></i>
                         </a>
                     </div> -->
-                </div>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="mission-box" data-aos="fade-up">
-                    <figure class="mission-icon">
-                        <img src="./assets/images/mission-icon2.png" alt="" class="img-fluid">
-                    </figure>
-                    <h4>Flutter</h4>
-                    <p class="text-size-18">Master Flutter and Dart to develop fast, native mobile apps for iOS and Android with a single codebase. This course emphasizes UI design and performance optimization for modern app development.</p>
-                    <!-- <div class="button-container">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="mission-box" data-aos="fade-up">
+              <figure class="mission-icon">
+                <img
+                  src="./assets/images/mission-icon2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </figure>
+              <h4>Flutter</h4>
+              <p class="text-size-18">
+                Master Flutter and Dart to develop fast, native mobile apps for
+                iOS and Android with a single codebase. This course emphasizes
+                UI design and performance optimization for modern app
+                development.
+              </p>
+              <!-- <div class="button-container">
                         <a href="https://docs.google.com/spreadsheets/d/placeholder-flutter-syllabus/export?format=xlsx" class="btn btn-primary syllabus-link" target="_blank">
                             Download Syllabus
                         </a>
@@ -221,16 +356,25 @@
                             Apply Now <i class="fa-thin fa-arrow-right"></i>
                         </a>
                     </div> -->
-                </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="mission-box" data-aos="fade-up">
-                    <figure class="mission-icon">
-                        <img src="./assets/images/mission-icon3.png" alt="" class="img-fluid">
-                    </figure>
-                    <h4>Kotlin</h4>
-                    <p class="text-size-18">Become proficient in Kotlin for Android app development, leveraging its modern features and interoperability with Java. Includes real-world projects and placement assistance for Android developer roles.</p>
-                    <!-- <div class="button-container">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="mission-box" data-aos="fade-up">
+              <figure class="mission-icon">
+                <img
+                  src="./assets/images/mission-icon3.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </figure>
+              <h4>Kotlin</h4>
+              <p class="text-size-18">
+                Become proficient in Kotlin for Android app development,
+                leveraging its modern features and interoperability with Java.
+                Includes real-world projects and placement assistance for
+                Android developer roles.
+              </p>
+              <!-- <div class="button-container">
                         <a href="https://docs.google.com/spreadsheets/d/placeholder-kotlin-syllabus/export?format=xlsx" class="btn btn-primary syllabus-link" target="_blank">
                             Download Syllabus
                         </a>
@@ -238,138 +382,242 @@
                             Apply Now <i class="fa-thin fa-arrow-right"></i>
                         </a>
                     </div> -->
-                </div>
             </div>
+          </div>
         </div>
-    </div>
-    <figure class="service-leftlayer mb-0">
-        <img src="./assets/images/service-rightlayer.png" alt="" class="img-fluid">
-    </figure>
-</section>
-<!-- Footer -->
-<section class="footer-section">
-    <div class="container">
+      </div>
+      <figure class="service-leftlayer mb-0">
+        <img
+          src="./assets/images/service-rightlayer.png"
+          alt=""
+          class="img-fluid"
+        />
+      </figure>
+    </section>
+    <!-- Footer -->
+    <section class="footer-section">
+      <div class="container">
         <figure class="footer-leftimage mb-0">
-            <img src="./assets/images/footer-leftimage.png" alt="" class="img-fluid">
+          <img
+            src="./assets/images/footer-leftimage.png"
+            alt=""
+            class="img-fluid"
+          />
         </figure>
         <figure class="mb-0 about-leftcircle">
-            <img src="./assets/images/about-rightcircle.png" alt="" class="img-fluid">
+          <img
+            src="./assets/images/about-rightcircle.png"
+            alt=""
+            class="img-fluid"
+          />
         </figure>
         <div class="middle-portion">
-            <div class="row">
-                <div class="col-lg-4 col-md-5 col-sm-6 col-12">
-                    <div class="first-column">
-                        <a class="navbar-brand" href="./index.html">Trump Technologies</a>
-                        <p class="text-size-18 footer-text">Our innovative IT services, corporate training, and placement solutions empower businesses and individuals to achieve excellence in the tech-driven world.</p>
-                        <div class="lower">
-                            <div class="lower-content">
-                                <figure class="icon">
-                                    <img src="./assets/images/footer-callicon.png" alt="" class="img-fluid">
-                                </figure>
-                                <div class="content">
-                                    <span class="text-white">Call us:</span>
-                                    <a class="text-size-18 mb-0 text text-decoration-none" href="tel:(+91)8977177745">(+91)8977177745</a>
-                                </div>
-                            </div>
-                            <div class="lower-content">
-                                <figure class="icon">
-                                    <img src="./assets/images/footer-emailicon.png" alt="" class="img-fluid">
-                                </figure>
-                                <div class="content">
-                                    <span class="text-white">Email us:</span>
-                                    <a href="mailto:it@trumptechnologies.in" class="text-size-18 mb-0 text-decoration-none">it@trumptechnologies.in</a>
-                                </div>
-                            </div>
-                        </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-6 col-12">
+              <div class="first-column">
+                <a class="navbar-brand" href="./index.html"
+                  >Trump Technologies</a
+                >
+                <p class="text-size-18 footer-text">
+                  Our innovative IT services, corporate training, and placement
+                  solutions empower businesses and individuals to achieve
+                  excellence in the tech-driven world.
+                </p>
+                <div class="lower">
+                  <div class="lower-content">
+                    <figure class="icon">
+                      <img
+                        src="./assets/images/footer-callicon.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <div class="content">
+                      <span class="text-white">Call us:</span>
+                      <a
+                        class="text-size-18 mb-0 text text-decoration-none"
+                        href="tel:(+91)8977177745"
+                        >(+91)8977177745</a
+                      >
                     </div>
-                </div>
- <div class="col-lg-2 col-md-3 col-sm-12 col-12 d-md-block d-none">
-                    <div class="links list-pd">
-                        <h4 class="heading text-white">Quick Links</h4>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href="./index.html" class="text-size-18 text text-decoration-none">Home</a></li>
-                            <li><a href="./faq.html" class="text-size-18 text text-decoration-none">FAQs</a></li>
-                            <li><a href="./contact.html" class="text-size-18 text text-decoration-none">Contact</a></li>
-                        </ul>
+                  </div>
+                  <div class="lower-content">
+                    <figure class="icon">
+                      <img
+                        src="./assets/images/footer-emailicon.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </figure>
+                    <div class="content">
+                      <span class="text-white">Email us:</span>
+                      <a
+                        href="mailto:it@trumptechnologies.in"
+                        class="text-size-18 mb-0 text-decoration-none"
+                        >it@trumptechnologies.in</a
+                      >
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 col-12 d-lg-block d-none">
-                    <div class="links">
-                        <h4 class="heading text-white">Company</h4>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href="./about.html" class="text-size-18 text text-decoration-none">About</a></li>
-                            <li><a href="./talent-programs.html" class="text-size-18 text text-decoration-none">Talent Programs</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-sm-block d-none">
-                    <div class="icons">
-                        <h4 class="heading mb-0 text-white">Reach Us</h4>
-                        <h4 class="heading text-white">We’d Love to Hear From You!</h4><br>
-                        <form id="reachusform" onsubmit="return sendReachUsEmail()">
-                            <div class="form-group mb-2">
-                                <input type="email" class="form_style" placeholder="Enter Email Address:" name="email" id="reachUsEmail" required> 
-                            </div>
-                            <button type="submit" class="subscribe_now text-white text-decoration-none">
-                                Send Now <i class="circle fa-thin fa-arrow-right"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 col-12 d-md-block d-none">
+              <div class="links list-pd">
+                <h4 class="heading text-white">Quick Links</h4>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a
+                      href="./index.html"
+                      class="text-size-18 text text-decoration-none"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./faq.html"
+                      class="text-size-18 text text-decoration-none"
+                      >FAQs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./contact.html"
+                      class="text-size-18 text text-decoration-none"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-12 d-lg-block d-none">
+              <div class="links">
+                <h4 class="heading text-white">Company</h4>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a
+                      href="./about.html"
+                      class="text-size-18 text text-decoration-none"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./talent-programs.html"
+                      class="text-size-18 text text-decoration-none"
+                      >Talent Programs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-sm-block d-none">
+              <div class="icons">
+                <h4 class="heading mb-0 text-white">Reach Us</h4>
+                <h4 class="heading text-white">We’d Love to Hear From You!</h4>
+                <br />
+                <form id="reachusform" onsubmit="return sendReachUsEmail()">
+                  <div class="form-group mb-2">
+                    <input
+                      type="email"
+                      class="form_style"
+                      placeholder="Enter Email Address:"
+                      name="email"
+                      id="reachUsEmail"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="subscribe_now text-white text-decoration-none"
+                  >
+                    Send Now <i class="circle fa-thin fa-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="copyright">
-            <div class="container">
-                <div class="row copyright-border">
-                    <div class="col-lg-6 col-md-6 col-sm-12 co-12 column">
-                        <p class="text-size-16">Copyright ©2025 Trump Technologies All Rights Reserved</p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 co-12 d-md-block d-none">
-                        <div class="social-icons position-relative">
-                            <ul class="list-unstyled position-absolute">
-                                <li><a href="https://www.linkedin.com/company/trumptechnologies" class="text-decoration-none" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in social-networks"></i></a></li>
-                                <li><a href="https://trumptechnologies.in/" class="text-decoration-none"><i class="fa-brands fa-google-plus-g social-networks"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+          <div class="container">
+            <div class="row copyright-border">
+              <div class="col-lg-6 col-md-6 col-sm-12 co-12 column">
+                <p class="text-size-16">
+                  Copyright ©2025 Trump Technologies All Rights Reserved
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 co-12 d-md-block d-none">
+                <div class="social-icons position-relative">
+                  <ul class="list-unstyled position-absolute">
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/trumptechnologies"
+                        class="text-decoration-none"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fa-brands fa-linkedin-in social-networks"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://trumptechnologies.in/"
+                        class="text-decoration-none"
+                        ><i
+                          class="fa-brands fa-google-plus-g social-networks"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
         <figure class="footer-dotimage mb-0">
-            <img src="./assets/images/footer-dotimage.png" alt="" class="img-fluid">
+          <img
+            src="./assets/images/footer-dotimage.png"
+            alt=""
+            class="img-fluid"
+          />
         </figure>
         <figure class="footer-leftlayer mb-0">
-            <img src="./assets/images/footer-leftlayer.png" alt="" class="img-fluid">
+          <img
+            src="./assets/images/footer-leftlayer.png"
+            alt=""
+            class="img-fluid"
+          />
         </figure>
-    </div>
-</section>
-<!-- Latest compiled JavaScript -->
-<script src="assets/js/jquery-3.6.0.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/video_link.js"></script>
-<script src="./assets/js/video.js"></script>
-<script src="assets/js/counter.js"></script>
-<script src="assets/js/owl.carousel.js"></script>
-<script src="assets/js/custom-carousel.js"></script>
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/animation_links.js"></script>
-<script src="assets/js/animation.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-function sendReachUsEmail() {
-    const email = document.getElementById("reachUsEmail").value;
-    const subject = encodeURIComponent("Reach Out from " + email);
-    const body = encodeURIComponent("Hello Trump Technologies Team,\n\nI would like to get in touch with you.\n\nMy Email: " + email);
-    const mailtoLink = `mailto:it@trumptechnologies.in?subject=${subject}&body=${body}`;
-    
-    window.location.href = mailtoLink;
+      </div>
+    </section>
+    <!-- Latest compiled JavaScript -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/video_link.js"></script>
+    <script src="./assets/js/video.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/custom-carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/animation_links.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      function sendReachUsEmail() {
+        const email = document.getElementById("reachUsEmail").value;
+        const subject = encodeURIComponent("Reach Out from " + email);
+        const body = encodeURIComponent(
+          "Hello Trump Technologies Team,\n\nI would like to get in touch with you.\n\nMy Email: " +
+            email
+        );
+        const mailtoLink = `mailto:it@trumptechnologies.in?subject=${subject}&body=${body}`;
 
-    // Clear the input
-    document.getElementById("reachUsEmail").value = "";
+        window.location.href = mailtoLink;
 
-    return false; // Prevent default form submission
-}
-</script>
-</body>
+        // Clear the input
+        document.getElementById("reachUsEmail").value = "";
+
+        return false; // Prevent default form submission
+      }
+    </script>
+  </body>
 </html>
